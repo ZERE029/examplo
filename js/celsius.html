@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function celsiusParaFahrenheit(celsius) {
+    let fahrenheit = (celsius * 9/5) + 32;
+    return fahrenheit;
+}
+
+// Exemplo de uso:
+let temperaturaCelsius = window.prompt("Digite um valor em Celsius")
+let temperaturaFahrenheit = celsiusParaFahrenheit(temperaturaCelsius);
+
+window.alert(`${temperaturaCelsius} graus Celsius é igual a ${temperaturaFahrenheit.toFixed(2)} graus Fahrenheit.`)
+
+    </script>
+</body>
+</html>

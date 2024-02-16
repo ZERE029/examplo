@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function celsiusParaFahrenheit(celsius) {
+    let fahrenheit = (celsius * 9/5) + 32;
+    return fahrenheit;
+}
+
+let temperaturaCelsius = 0;
+let temperaturaFahrenheit;
+let contador = 1;
+
+while (contador <= 5) {
+    temperaturaFahrenheit = celsiusParaFahrenheit(temperaturaCelsius);
+    console.log(`${temperaturaCelsius} graus Celsius é igual a ${temperaturaFahrenheit.toFixed(2)} graus Fahrenheit.`);
+    
+ 
+     temperaturaCelsius = parseFloat(prompt("Digite um valor:"));
+     window.alert(`${temperaturaCelsius} graus Celsius é igual a ${temperaturaFahrenheit.toFixed(2)} graus Fahrenheit.`)
+    contador++;
+    
+}
+
+    </script>
+</body>
+</html>

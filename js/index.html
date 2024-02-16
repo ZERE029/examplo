@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+<h1>CONVERTER CELSIUS PARA FARENHEIT E KELVIN</h1>
+
+    <script>
+        // Função para converter Celsius para Kelvin
+function celsiusParaKelvin(celsius) {
+    var kelvin = celsius + 273.15;
+    return kelvin;
+}
+
+// Função para converter Celsius para Fahrenheit
+function celsiusParaFahrenheit(celsius) {
+    var fahrenheit = (celsius * 9/5) + 32;
+    return fahrenheit;
+}
+
+// Exemplo de uso
+var temperaturaCelsius = parseFloat(prompt("Digite a temperatura em Celsius:"));
+
+var temperaturaKelvin = celsiusParaKelvin(temperaturaCelsius);
+var temperaturaFahrenheit = celsiusParaFahrenheit(temperaturaCelsius);
+
+console.log(temperaturaCelsius + " graus Celsius é igual a " + temperaturaKelvin + " Kelvin.");
+console.log(temperaturaCelsius + " graus Celsius é igual a " + temperaturaFahrenheit + " graus Fahrenheit.");
+
+    </script>
+</body>
+</html>
